@@ -214,8 +214,8 @@ def sincos_time(Train_df):
     seconds_in_day = 24*60*60    
     time_matrix = ['Placement_-_Time', 'Confirmation_-_Time', 'Arrival_at_Destination_-_Time', 'Arrival_at_Pickup_-_Time', 'Pickup_-_Time']
     for i in time_matrix:
-        Train_df[''i'_sin_time'] = np.sin(2*np.pi*Train_df['Placement_-_Time']/seconds_in_day)
-        Train_df[''i'_cos_time'] = np.cos(2*np.pi*Train_df['Placement_-_Time']/seconds_in_day)
+        Train_df[str(i)+'_sin_time'] = np.sin(2*np.pi*Train_df['Placement_-_Time']/seconds_in_day)
+        Train_df[str(i)+'_cos_time'] = np.cos(2*np.pi*Train_df['Placement_-_Time']/seconds_in_day)
     return Train_df
 
 
